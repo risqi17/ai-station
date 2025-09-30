@@ -9,19 +9,22 @@
           "name": "Midjourney",
           "description": "A community-driven platform for creating stunning generative art with natural language prompts and remix workflows.",
           "image": "/images/midjourney.svg",
-          "url": "https://www.midjourney.com/"
+          "url": "https://www.midjourney.com/",
+          "prompt": "Ultra-detailed cinematic portrait of an explorer standing in bioluminescent mist, 85mm lens, volumetric lighting, hyper-realistic textures, vivid teal and magenta color palette"
         },
         {
           "name": "PromptHero",
           "description": "Search thousands of AI images and prompts to discover stylistic inspiration for your next visual concept.",
           "image": "/images/prompthero.svg",
-          "url": "https://prompthero.com/"
+          "url": "https://prompthero.com/",
+          "prompt": "Concept art of a floating library drifting above a desert oasis at dusk, warm golden hour light, intricate arabesque patterns, Studio Ghibli vibes"
         },
         {
           "name": "Lexica",
           "description": "Explore an expansive gallery of Stable Diffusion prompts paired with high-quality outputs to refine your ideas.",
           "image": "/images/lexica.svg",
-          "url": "https://lexica.art/"
+          "url": "https://lexica.art/",
+          "prompt": "Wide-angle shot of a futuristic greenhouse nestled inside an icy cavern, soft diffused lighting, lush botanicals, reflective frost surfaces, 32k resolution"
         }
       ]
     },

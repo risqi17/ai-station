@@ -1,57 +1,46 @@
-import Image from 'next/image';
-import styles from './page.module.css';
-import toolsData from '../data/tools.json';
-
-type Tool = {
-  name: string;
-  description: string;
-  image: string;
-  url: string;
-};
-
-type Category = {
-  id: string;
-  title: string;
-  description: string;
-  tools: Tool[];
-};
-
-const categories = toolsData.categories as Category[];
+import Link from 'next/link';
+import styles from './home.module.css';
+import { categories } from '../lib/categories';
 
 export default function HomePage() {
   return (
     <main className={styles.main}>
-      <header className={styles.header}>
-        <h1 className={styles.title}>AI Tools Library</h1>
-        <p className={styles.subtitle}>
-          Explore a curated collection of AI resources across two essential categories: tools for crafting
-          captivating image prompts and platforms that supercharge your daily workflows.
+      <header className={styles.hero}>
+        <h1 className={styles.heroTitle}>AI Tools Library</h1>
+        <p className={styles.heroSubtitle}>
+          Explore a curated collection of AI resources split across two focused tracks: tools for crafting evocative
+          image prompts and platforms that supercharge daily workflows.
         </p>
+        <div className={styles.ctaRow}>
+          <Link className={styles.ctaLink} href="/image-prompt">
+            Explore Image Prompts ->
+          </Link>
+          <Link className={styles.ctaLink} href="/tools">
+            Explore AI Tools ->
+          </Link>
+        </div>
       </header>
 
-      {categories.map((category) => (
-        <section key={category.id} className={styles.categorySection}>
-          <div className={styles.categoryHeader}>
-            <h2 className={styles.categoryTitle}>{category.title}</h2>
-            <p className={styles.categoryDescription}>{category.description}</p>
-          </div>
+      <section>
+        <div className={styles.sectionHeading}>
+          <p className={styles.sectionEyebrow}>Jump in</p>
+          <h2 className={styles.sectionTitle}>Pick a starting point</h2>
+          <p className={styles.sectionSubtitle}>
+            Each collection dives deep into hand-picked products, complete with quick overviews and direct links so you
+            can evaluate them faster.
+          </p>
+        </div>
 
-          <div className={styles.cardGrid}>
-            {category.tools.map((tool) => (
-              <article key={tool.name} className={styles.card}>
-                <div className={styles.cardImageWrapper}>
-                  <Image src={tool.image} alt={tool.name} fill sizes="(max-width: 768px) 100vw, 33vw" />
-                </div>
-                <h3 className={styles.cardTitle}>{tool.name}</h3>
-                <p className={styles.cardDescription}>{tool.description}</p>
-                <a className={styles.cardLink} href={tool.url} target="_blank" rel="noreferrer">
-                  Visit {tool.name}
-                </a>
-              </article>
-            ))}
-          </div>
-        </section>
-      ))}
+        <div className={styles.categoryGrid}>
+          {categories.map((category) => (
+            <Link key={category.id} className={styles.categoryCard} href={`/${category.id}`}>
+              <h3 className={styles.categoryTitle}>{category.title}</h3>
+              <p className={styles.categoryDescription}>{category.description}</p>
+              <span className={styles.categoryLink}>View collection -></span>
+            </Link>
+          ))}
+        </div>
+      </section>
     </main>
   );
 }
