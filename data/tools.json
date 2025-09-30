@@ -1,0 +1,54 @@
+{
+  "categories": [
+    {
+      "id": "image-prompt",
+      "title": "Image Prompt Inspiration",
+      "description": "Craft richer visuals with tools that help you iterate on prompts, experiment with composition, and build reusable style libraries.",
+      "tools": [
+        {
+          "name": "Midjourney",
+          "description": "A community-driven platform for creating stunning generative art with natural language prompts and remix workflows.",
+          "image": "/images/midjourney.svg",
+          "url": "https://www.midjourney.com/"
+        },
+        {
+          "name": "PromptHero",
+          "description": "Search thousands of AI images and prompts to discover stylistic inspiration for your next visual concept.",
+          "image": "/images/prompthero.svg",
+          "url": "https://prompthero.com/"
+        },
+        {
+          "name": "Lexica",
+          "description": "Explore an expansive gallery of Stable Diffusion prompts paired with high-quality outputs to refine your ideas.",
+          "image": "/images/lexica.svg",
+          "url": "https://lexica.art/"
+        }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "AI Productivity Tools",
+      "description": "Automate repetitive work, co-create content, and accelerate research with these powerful, everyday AI companions.",
+      "tools": [
+        {
+          "name": "Notion AI",
+          "description": "Brainstorm, summarize, translate, and edit content directly inside the Notion workspace you already use.",
+          "image": "/images/notion-ai.svg",
+          "url": "https://www.notion.so/product/ai"
+        },
+        {
+          "name": "Perplexity",
+          "description": "A conversational answer engine that blends search and generative AI to deliver fast, sourced research.",
+          "image": "/images/perplexity.svg",
+          "url": "https://www.perplexity.ai/"
+        },
+        {
+          "name": "Gamma",
+          "description": "Transform ideas into polished decks, documents, and webpages with natural language commands and smart templates.",
+          "image": "/images/gamma.svg",
+          "url": "https://gamma.app/"
+        }
+      ]
+    }
+  ]
+}

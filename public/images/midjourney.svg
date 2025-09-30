@@ -1,0 +1,12 @@
+<svg width="400" height="250" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="40" y1="30" x2="360" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#60A5FA" />
+      <stop offset="1" stop-color="#C084FC" />
+    </linearGradient>
+  </defs>
+  <rect x="12" y="12" width="376" height="226" rx="28" fill="url(#g1)" opacity="0.9" />
+  <rect x="40" y="40" width="320" height="170" rx="20" fill="rgba(15, 23, 42, 0.45)" />
+  <path d="M120 150C145 120 180 110 200 120C220 130 260 170 290 150" stroke="#F8FAFC" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" />
+  <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle" font-family="'Inter', sans-serif" font-size="42" font-weight="700" fill="#F8FAFC">Midjourney</text>
+</svg>
