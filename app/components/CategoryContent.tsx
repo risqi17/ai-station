@@ -42,7 +42,9 @@ export function CategoryContent({ tools }: CategoryContentProps) {
       {filteredTools.length > 0 ? (
         <ToolGrid tools={filteredTools} />
       ) : (
-        <p className={styles.emptyState}>No tools found for "{query}".</p>
+        <p className={styles.emptyState}>
+          No tools found for &ldquo;{query}&rdquo;.
+        </p>
       )}
     </div>
   );

@@ -13,10 +13,10 @@ export default function HomePage() {
         </p>
         <div className={styles.ctaRow}>
           <Link className={styles.ctaLink} href="/image-prompt">
-            Explore Image Prompts ->
+            Explore Image Prompts &gt;
           </Link>
           <Link className={styles.ctaLink} href="/tools">
-            Explore AI Tools ->
+            Explore AI Tools &gt;
           </Link>
         </div>
       </header>
@@ -36,7 +36,7 @@ export default function HomePage() {
             <Link key={category.id} className={styles.categoryCard} href={`/${category.id}`}>
               <h3 className={styles.categoryTitle}>{category.title}</h3>
               <p className={styles.categoryDescription}>{category.description}</p>
-              <span className={styles.categoryLink}>View collection -></span>
+              <span className={styles.categoryLink}>View collection &gt;</span>
             </Link>
           ))}
         </div>
