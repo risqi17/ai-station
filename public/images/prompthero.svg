@@ -1,0 +1,13 @@
+<svg width="400" height="250" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g2" x1="40" y1="40" x2="360" y2="210" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F472B6" />
+      <stop offset="1" stop-color="#FB7185" />
+    </linearGradient>
+  </defs>
+  <rect x="12" y="12" width="376" height="226" rx="28" fill="url(#g2)" opacity="0.9" />
+  <rect x="32" y="32" width="336" height="186" rx="24" fill="rgba(15, 23, 42, 0.5)" />
+  <circle cx="120" cy="125" r="46" stroke="#F8FAFC" stroke-width="10" opacity="0.85" />
+  <path d="M180 95H280L260 195H160L180 95Z" fill="#F8FAFC" opacity="0.7" />
+  <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" font-family="'Inter', sans-serif" font-size="40" font-weight="700" fill="#F8FAFC">PromptHero</text>
+</svg>
