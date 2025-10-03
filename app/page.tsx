@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import styles from './home.module.css';
-import { categories } from '../lib/categories';
+import { getCategories } from '../lib/categories';
 
-export default function HomePage() {
+export default async function HomePage() {
+  const categories = await getCategories();
+
   return (
     <main className={styles.main}>
       <header className={styles.hero}>

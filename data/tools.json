@@ -6,6 +6,13 @@
       "description": "Craft richer visuals with tools that help you iterate on prompts, experiment with composition, and build reusable style libraries.",
       "tools": [
         {
+          "name": "Test",
+          "description": "testttt",
+          "image": "/uploads/test-1759507068974.jpg",
+          "url": "http://localhost:3000/create",
+          "prompt": "testttttttttt"
+        },
+        {
           "name": "Midjourney",
           "description": "A community-driven platform for creating stunning generative art with natural language prompts and remix workflows.",
           "image": "/images/midjourney.svg",
@@ -33,6 +40,13 @@
       "title": "AI Productivity Tools",
       "description": "Automate repetitive work, co-create content, and accelerate research with these powerful, everyday AI companions.",
       "tools": [
+        {
+          "name": "gasss",
+          "description": "as",
+          "image": "/uploads/gasss-1759507132871.jpg",
+          "url": "http://localhost:3000/create",
+          "prompt": "dfdf"
+        },
         {
           "name": "Notion AI",
           "description": "Brainstorm, summarize, translate, and edit content directly inside the Notion workspace you already use.",

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import styles from '../category-page.module.css';
 import { CategoryContent } from '../components/CategoryContent';
-import { categories, getCategoryById } from '../../lib/categories';
+import { getCategories, getCategoryById } from '../../lib/categories';
 
 type CategoryPageProps = {
   params: {
@@ -11,12 +11,13 @@ type CategoryPageProps = {
   };
 };
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
+  const categories = await getCategories();
   return categories.map(({ id }) => ({ categoryId: id }));
 }
 
-export function generateMetadata({ params }: CategoryPageProps): Metadata {
-  const category = getCategoryById(params.categoryId);
+export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
+  const category = await getCategoryById(params.categoryId);
 
   if (!category) {
     return {
@@ -31,8 +32,8 @@ export function generateMetadata({ params }: CategoryPageProps): Metadata {
   };
 }
 
-export default function CategoryPage({ params }: CategoryPageProps) {
-  const category = getCategoryById(params.categoryId);
+export default async function CategoryPage({ params }: CategoryPageProps) {
+  const category = await getCategoryById(params.categoryId);
 
   if (!category) {
     notFound();
